@@ -23,4 +23,4 @@ wget -O - https://raw.githubusercontent.com/jonathanblade/arch/main/arch-1.sh di
 
 ## Настройка
 
-**Grub** `GRUB_TIMEOUT=0` и `GRUB_CMDLINE_LINUX_DEFAULT=""` в `/etc/default/grub`, затем `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+**Grub** установить `GRUB_TIMEOUT=0` и `GRUB_CMDLINE_LINUX_DEFAULT=""` в `/etc/default/grub`, затем обновить конфиг `sudo grub-mkconfig -o /boot/grub/grub.cfg`
