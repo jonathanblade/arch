@@ -46,4 +46,4 @@ pacman -S --noconfirm gnome
 # Services
 systemctl enable NetworkManager
 systemctl enable bluetooth
-systemctl enable gd
+systemctl enable gdm
