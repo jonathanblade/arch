@@ -1,6 +1,9 @@
-# Набор файлов для установки ArchLinux
+# Набор файлов для установки и настройки ArchLinux
+
+## Установка
 
 Загружаемся в archiso, далее:
+
 ```bash
 # Узнаём список дисков
 lblsk
@@ -17,3 +20,7 @@ wget -O - https://raw.githubusercontent.com/jonathanblade/arch/main/arch-1.sh di
 При разметке диска (например, /dev/nvme0n1) создаём две партиции:
 1. EFI (512MB)
 2. Linux Filesystem (всё оставшееся место)
+
+## Настройка
+
+**Grub** `GRUB_TIMEOUT=0` и `GRUB_CMDLINE_LINUX_DEFAULT=""` в `/etc/default/grub`, затем `sudo grub-mkconfig -o /boot/grub/grub.cfg`
